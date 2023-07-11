@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.fa-solid {
+    color: #d3a936;
+    font-size: 80px;
+}
+
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px;
+    color: rgb(161, 161, 227);
+}
+
+.main {
+    grid-row: 2 / 3;
+    grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(161, 161, 227);
+}
+
+.search-container {
+    margin: 20px;
+    height: 32px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    height: 100%;
+    padding: 0px 10px;
+    border-radius: 6PX;
+}
+
+.searchButton {
+    height: 100%;
+    padding: 0px 10px;
+    margin-left: 5px;
+    background-color: lightslategray;
+    color: aliceblue;
+    border-radius: 6px;
+}
+
+.searchButton:hover {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+.weatherBox {
+    margin-top: 24px;
+    height: 250px;
+    width: 200px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightslategray;
+    border-radius: 6px;
+    color: aliceblue;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

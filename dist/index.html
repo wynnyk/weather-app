@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherit</title>
+    <script src="https://kit.fontawesome.com/7e24ffd685.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <h1 class="name">Weatherit</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="search-container">
+            <input class="search" type="search" id="search" placeholder="Enter City Name">
+            <button type="submit" class="searchButton" id="searchButton"> <i class="fa fa-search"></i></button>
+        </div>
+        <div class="weatherBox">
+            <h2 id="cityName"></h2>
+            <h4 id="conditions"></h4>
+            <h4 id="temperature"></h4>
+            <p id="feelsLike"></p>
+            <p id="windSpeed"></p>
+            <p id="humidity"></p>
+            <p id="precipitation"></p>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
